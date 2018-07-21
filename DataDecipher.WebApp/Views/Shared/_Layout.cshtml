@@ -1,23 +1,62 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - DataDecipher.WebApp</title>
+<head>
 
-        <environment include="Development">
-            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-            <link rel="stylesheet" href="~/css/site.css" />
-        </environment>
-        <environment exclude="Development">
-            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-        </environment>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Login Page - Now UI Kit by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://www.creative-tim.com/product/now-ui-kit" />
+    <!--  Social tags      -->
+    <meta name="keywords" content="bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, now ui, now ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit">
+    <meta name="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Now UI Kit by Creative Tim">
+    <meta itemprop="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
+    <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    @*<meta name="twitter:site" content="@creativetim">*@
+    <meta name="twitter:title" content="Now UI Kit by Creative Tim">
+    <meta name="twitter:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
+   @* <meta name="twitter:creator" content="@creativetim">*@
+    <meta name="twitter:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg">
+    <meta name="twitter:data1" content="Now UI Kit by Creative Tim">
+    <meta name="twitter:label1" content="Product Type">
+    <meta name="twitter:data2" content="Free">
+    <meta name="twitter:label2" content="Price">
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="Now UI Kit by Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://demos.creative-tim.com/now-ui-kit/index.html" />
+    <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg" />
+    <meta property="og:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free." />
+    <meta property="og:site_name" content="Creative Tim" />
+
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0" />*@
+    <title>@ViewData["Title"] - DataDecipher.WebApp</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/assets/css/now-ui-kit.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/assets/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+    <body class="login-page sidebar-collapse">
+        @*<nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,17 +75,13 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>*@
 
         <partial name="_CookieConsentPartial" />
 
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; 2018 - DataDecipher.WebApp</p>
-            </footer>
-        </div>
+       
+        @RenderBody()
+       
 
         <environment include="Development">
             <script src="~/lib/jquery/dist/jquery.js"></script>
