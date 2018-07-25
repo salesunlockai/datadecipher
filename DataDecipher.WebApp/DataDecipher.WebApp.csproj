@@ -197,6 +197,9 @@
     <Content Remove="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-bootstrap-switch.scss" />
     <Content Remove="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-datepicker.scss" />
     <Content Remove="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-nouislider.scss" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\login-page-background.jpg" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\data-analysis.png" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\report.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />
@@ -228,7 +231,7 @@
     <None Include="wwwroot\lib\bootstrap\assets\img\hero-image-3.png" />
     <None Include="wwwroot\lib\bootstrap\assets\img\invision-white-slim.png" />
     <None Include="wwwroot\lib\bootstrap\assets\img\landing.jpg" />
-    <None Include="wwwroot\lib\bootstrap\assets\img\login.jpg" />
+    <None Include="wwwroot\lib\bootstrap\assets\img\login_old.jpg" />
     <None Include="wwwroot\lib\bootstrap\assets\img\logo-square.jpg" />
     <None Include="wwwroot\lib\bootstrap\assets\img\logo.png" />
     <None Include="wwwroot\lib\bootstrap\assets\img\now-logo.png" />
@@ -387,5 +390,7 @@
     <None Include="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-bootstrap-switch.scss" />
     <None Include="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-datepicker.scss" />
     <None Include="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-nouislider.scss" />
+    <None Include="wwwroot\lib\bootstrap\assets\img\login.jpg" />
+    <None Include="wwwroot\lib\bootstrap\assets\img\datadecipher-logo.png" />
   </ItemGroup>
 </Project>
