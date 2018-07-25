@@ -14,6 +14,11 @@ namespace DataDecipher.WebApp.Controllers
         {
             return View();
         }
+        public IActionResult Main()
+        {
+            //TODO: Add login code here
+            return View();
+        }
 
         public IActionResult About()
         {
