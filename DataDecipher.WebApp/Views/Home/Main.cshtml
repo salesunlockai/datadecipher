@@ -1,156 +1,109 @@
 ﻿@{
     ViewData["Title"] = "Main Page";
 }
-<div id="wrapper">
-     <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Data Decipher
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Data Source</a>
-                </li>
-                <li>
-                    <a href="#">Method</a>
-                </li>
-                <li>
-                    <a href="#">Instrument</a>
-                </li>
-                <li>
-                    <a href="#">Parser</a>
-                </li>
-                <li>
-                    <a href="#">Report</a>
-                </li>
-            </ul>
-        </div>
-       
 
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper" >
-            <div class="container-fluid">
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"> <i class="now-ui-icons files-paper"></i> Toggle Menu</a>
-                <h5> Welcome to Data Decipher</h5>
-                <p>Use instructions below to quickly obtain insights from your data and generate reports</p>
-            
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"> <i class="now-ui-icons files-paper"></i> Toggle Menu</a>
+        <h5> Welcome to Data Decipher</h5>
+        <p>Use instructions below to quickly obtain insights from your data and generate reports</p>
+    </div>
+    <div id="method" class="section">
+        <div class="container-fluid">
+            <div class="row>">
+                <div class="col-md-4">
+                    <h6>1. Define your method</h6>
+                    <br />
+                    <br />
+                </div>
             </div>
-            <div class="section">
-                <div class=container>
-                    <div class="row>">
-                        <div class="col-md-4">
-                            <h6>Define your method</h6>
-                            <br />
-                            <br />
-                        </div>
-                    </div>
-                    <div class="row>">
-                        <div class="col-md-4">
-                            <input type="text" value="" placeholder="Your method name" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row>">
-                        <div class="col-md-4">
-                            <textarea class="form-control" placeholder="Little bit more about your method goes here" rows="5"></textarea>
-                        </div>
-                    </div>
-            <div class="section section-tabs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <ul class="nav nav-tabs justify-content-center" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#datasource" role="tab">
-                                            <i class="now-ui-icons objects_umbrella-13"></i> Data source
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="card-body">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content text-center">
-                                        <div class="tab-pane active" id="datasource" role="tabpanel">
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="row>">
+                <div class="col-md-4">
+                    <input type="text" value="" placeholder="Your method name" class="form-control">
+                </div>
+            </div>
+            <div class="row>">
+                <div class="col-md-4">
+                    <textarea class="form-control" placeholder="Little bit more about your method goes here" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="datasource" class="section">
+        <div class="container-fluid">
+            <div class="row>">
+                <div class=col-md-4>
+                    <h6>2. Set datasource</h6>
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <div class="row>">
+                <div class=col-md-6>
+                    <p>Select files from your computer</p>
+                    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="file" class="file btn btn-primary btn-simple" name="files[]" id="js-upload-files" multiple>
                             </div>
+                            <button type="submit" class="btn btn-primary btn-round" id="js-upload-submit">Upload files</button>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                                <ul class="nav nav-tabs justify-content-center" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#instrument" role="tab">
-                                            <i class="now-ui-icons objects_umbrella-13"></i> Instrument
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="card-body">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content text-center">
-                                        <div class="tab-pane active" id="instrument" role="tabpanel">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <ul class="nav nav-tabs justify-content-center" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#parser" role="tab">
-                                            <i class="now-ui-icons objects_umbrella-13"></i> Parser
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="card-body">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content text-center">
-                                        <div class="tab-pane active" id="parser" role="tabpanel">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <ul class="nav nav-tabs justify-content-center" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#report" role="tab">
-                                            <i class="now-ui-icons objects_umbrella-13"></i> Report
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="card-body">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content text-center">
-                                        <div class="tab-pane active" id="report" role="tabpanel">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row>">
+                <div class=col-md-4>
+                    <br />
+                    <p>Or drag and drop files below</p>
+                    <div class="upload-drop-zone" id="drop-zone">
+                        Just drag and drop files here
                     </div>
                 </div>
             </div>
-           
+            <div class="row>">
+                <div class=col-md-4>
+                    <br />
+                    <p>Or Select from existing datasources</p>
+                    <div class="upload-drop-zone" id="drop-zone">
+                        show already uploaded files for user here
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
+    <div id="instrument" class="section">
+        <div class="container-fluid">
+            <div class="row>">
+                <div class=col-md-4>
+                    <h6>3. Set instrument configuration</h6>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parser" class="section">
+        <div class="container-fluid">
+            <div class="row>">
+                <div class=col-md-4>
+                    <h6>4. Set parser configuration</h6>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="report" class="section">
+        <div class="container-fluid">
+            <div class="row>">
+                <div class=col-md-4>
+                    <h6>5. Set reporting configuration</h6>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- /#wrapper -->
-<!-- Bootstrap core JavaScript -->
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Menu Toggle Script -->
-<script>$("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-});</script>

@@ -80,7 +80,8 @@ body {
 }
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
-  text-decoration: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 .sidebar-nav>.sidebar-brand {
@@ -119,4 +120,24 @@ body {
     position: relative;
     margin-right: 0;
   }
+}
+/* layout.css Style */
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+}
+
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
 }

@@ -19,7 +19,11 @@ namespace DataDecipher.WebApp.Controllers
             //TODO: Add login code here
             return View();
         }
-
+        public IActionResult Method()
+        {
+            //TODO: Add login code here
+            return View();
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
