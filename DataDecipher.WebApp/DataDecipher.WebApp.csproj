@@ -201,6 +201,8 @@
     <Content Remove="wwwroot\lib\bootstrap\.DS_Store" />
     <Content Remove="wwwroot\lib\bootstrap\dist\.DS_Store" />
     <Content Remove="wwwroot\lib\bootstrap\assets\css\simple-sidebar.css" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\main-background.jpg" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />
@@ -392,5 +394,7 @@
     <None Include="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-datepicker.scss" />
     <None Include="wwwroot\lib\bootstrap\assets\sass\now-ui-kit\plugins\_plugin-nouislider.scss" />
     <None Include="wwwroot\lib\bootstrap\assets\css\simple-sidebar.css" />
+    <None Include="wwwroot\lib\bootstrap\assets\img\main-background.jpg" />
+    <None Include="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
   </ItemGroup>
 </Project>
