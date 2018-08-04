@@ -203,6 +203,8 @@
     <Content Remove="wwwroot\lib\bootstrap\assets\css\simple-sidebar.css" />
     <Content Remove="wwwroot\lib\bootstrap\assets\img\main-background.jpg" />
     <Content Remove="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
+    <Content Remove="Views\Home\About.cshtml" />
+    <Content Remove="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />
@@ -396,5 +398,13 @@
     <None Include="wwwroot\lib\bootstrap\assets\css\simple-sidebar.css" />
     <None Include="wwwroot\lib\bootstrap\assets\img\main-background.jpg" />
     <None Include="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Main\" />
+    <Folder Include="Views\Method\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\HomeController.cs" />
   </ItemGroup>
 </Project>

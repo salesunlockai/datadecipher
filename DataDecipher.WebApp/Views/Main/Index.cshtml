@@ -2,33 +2,21 @@
     ViewData["Title"] = "Main Page";
 }
 
+
+@await Html.PartialAsync("_SideBar.cshtml")
+
+@await Html.PartialAsync("_HeaderNavBar.cshtml")
+
+
 <div id="page-content-wrapper">
     <div class="container-fluid">
-        <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"> <i class="now-ui-icons files-paper"></i> Toggle Menu</a>
+        @*<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"> <i class="now-ui-icons files-paper"></i> Toggle Menu</a>*@
         <h5> Welcome to Data Decipher</h5>
         <p>Use instructions below to quickly obtain insights from your data and generate reports</p>
     </div>
-    <div id="method" class="section">
-        <div class="container-fluid">
-            <div class="row>">
-                <div class="col-md-4">
-                    <h6>1. Define your method</h6>
-                    <br />
-                    <br />
-                </div>
-            </div>
-            <div class="row>">
-                <div class="col-md-4">
-                    <input type="text" value="" placeholder="Your method name" class="form-control">
-                </div>
-            </div>
-            <div class="row>">
-                <div class="col-md-4">
-                    <textarea class="form-control" placeholder="Little bit more about your method goes here" rows="5"></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    @await Html.PartialAsync("~/Views/Method/_NewMethod.cshtml")
+
     <div id="datasource" class="section">
         <div class="container-fluid">
             <div class="row>">
