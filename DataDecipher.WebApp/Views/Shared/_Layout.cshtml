@@ -45,6 +45,7 @@
         <link rel="stylesheet" href="~/lib/bootstrap/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/assets/css/now-ui-kit.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/assets/css/simple-sidebar.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/assets/css/jquery.dataTables.min.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -54,31 +55,37 @@
     </environment>
 </head>
 <body>
-    
+
 
     <partial name="_CookieConsentPartial" />
 
     <div id="wrapper">
         @RenderBody()
     </div>
-        <!-- /#page-content-wrapper -->
-        <!-- /#wrapper -->
-        <!-- Bootstrap core JavaScript -->
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- /#page-content-wrapper -->
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/assets/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/bootstrap/assets/js/now-ui-kit.js"></script>
 
-        <script>$("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
+    <script>$("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+});</script>
+    <script>$(document).ready(function() {
+            $('#myTable').dataTable();
 });</script>
 
 
-        @*<environment include="Development">
+
+    @*<environment include="Development">
             <script src="~/lib/jquery/dist/jquery.min.js"></script>
             <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
             <script src="~/js/site.js" asp-append-version="true"></script>
         </environment>*@
-        @*<environment exclude="Development">
+    @*<environment exclude="Development">
             <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                     asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                     asp-fallback-test="window.jQuery"
@@ -94,6 +101,6 @@
             <script src="~/js/site.min.js" asp-append-version="true"></script>
         </environment>*@
 
-        @RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

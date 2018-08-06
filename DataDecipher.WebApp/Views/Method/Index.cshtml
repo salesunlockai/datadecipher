@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Main Page";
+}
+
+
+@await Html.PartialAsync("~/Views/Shared/_SideBar.cshtml")
+
+@await Html.PartialAsync("~/Views/Shared/_HeaderNavBar.cshtml")
+
+
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <h5> List of all the accessible methods</h5>
+        <p>The following table displays all the methods that are accessible to you. You can create, edit, delete and share the methods using this screen.</p>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table id="myTable" summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+                            @*
+                                <caption class="text-center">An example of a responsive table based on <a href="https://getbootstrap.com/css/#tables-responsive" target="_blank">Bootstrap</a>:</caption>
+                            *@
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Method Name</th>
+                                    <th>Description</th>
+                                    <th>Created By</th>
+                                    <th>Last Modified Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="" value=""></td>
+                                    <td>Method1</td>
+                                    <td>Method1 Description</td>
+                                    <td>Person1</td>
+                                    <td>6/30/2018 12:45:04 PM</td>
+                                    <td>Draft</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" value=""></td>
+                                    <td>Method2</td>
+                                    <td>Method2 Description</td>
+                                    <td>Person2</td>
+                                    <td>6/30/2018 12:50:04 PM</td>
+                                    <td>Completed</td>
+                                </tr>
+                                @*<tr>
+                                        <td><input type="checkbox" name="" value=""></td>
+                                        <td>Method2</td>
+                                        <td>Person2</td>
+                                        <td>Method2 Description</td>
+                                        <td></td>
+                                        <td>7/2/2018 2:45:04 PM</td>
+                                        <td>157KB</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" value=""></td>
+                                        <td>Method3</td>
+                                        <td>Person3</td>
+                                        <td>Method3 Description</td>
+                                        <td></td>
+                                        <td>7/20/2018 10:45:04 PM</td>
+                                        <td>250KB</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" value=""></td>
+                                        <td>Method1</td>
+                                        <td>Person1</td>
+                                        <td>Method1 Description</td>
+                                        <td></td>
+                                        <td>7/21/2018 9:40:04 AM</td>
+                                        <td>137KB</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" value=""></td>
+                                        <td>Method2</td>
+                                        <td>Person2</td>
+                                        <td>Method2 Description</td>
+                                        <td></td>
+                                        <td>7/22/2018 2:45:04 PM</td>
+                                        <td>157KB</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="" value=""></td>
+                                        <td>Method3</td>
+                                        <td>Person3</td>
+                                        <td>Method3 Description</td>
+                                        <td></td>
+                                        <td>7/24/2018 10:45:04 PM</td>
+                                        <td>1250KB</td>
+                                    </tr>*@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

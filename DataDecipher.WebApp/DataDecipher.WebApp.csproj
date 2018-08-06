@@ -205,6 +205,8 @@
     <Content Remove="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
     <Content Remove="Views\Home\About.cshtml" />
     <Content Remove="Views\Home\Contact.cshtml" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\css\jquery.dataTables.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\assets\js\jquery.dataTables.min.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />
@@ -398,6 +400,8 @@
     <None Include="wwwroot\lib\bootstrap\assets\css\simple-sidebar.css" />
     <None Include="wwwroot\lib\bootstrap\assets\img\main-background.jpg" />
     <None Include="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
+    <None Include="wwwroot\lib\bootstrap\assets\css\jquery.dataTables.min.css" />
+    <None Include="wwwroot\lib\bootstrap\assets\js\jquery.dataTables.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Login\" />
