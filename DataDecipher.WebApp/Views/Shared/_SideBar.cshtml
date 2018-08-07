@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Http.Features
 
 @{ 
+<<<<<<< HEAD:DataDecipher.WebApp/Views/Shared/_SideBar.cshtml
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
@@ -28,5 +29,37 @@
         </li>
     </ul>
 </div>
+=======
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Data Decipher
+                    </a>
+                </li>
+                <li class="active">
+                    <a asp-controller="Main" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <a href="#method">Method</a>
+                </li>
+                <li>
+                    <a href="#datasource">Data Source</a>
+                </li>
+                <li>
+                    <a href="#instrument">Instrument</a >
+                </li>
+                <li>
+                    <a href="#parser">Parser</a>
+                </li>
+                <li>
+                    <a href="#report">Report</a >
+                </li>
+                <li>
+                    <a asp-controller="Login" asp-action="Index" class="link">Logout</a>
+                </li>
+            </ul>
+        </div>
+>>>>>>> 8b806ee... * Index.cshtml: Removed redundant code:DataDecipher.WebApp/Views/Main/_SideBar.cshtml
    
 }
