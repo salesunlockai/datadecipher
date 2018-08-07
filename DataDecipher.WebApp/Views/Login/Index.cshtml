@@ -1,13 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Login Page";
 }
+@model DataDecipher.WebApp.Models.DDCUserModel
+
 <div class="login-page sidebar-collapse">
     <div class="page-header">
         <div class="page-header-image" style="background-image:url(../lib/bootstrap/assets/img/main-background.jpg)"></div>
         <div class="container">
             <div class="col-md-6 content-center">
                 <div class="card card-login card-plain">
-                    <form class="form" method="" action="">
+                    <form class="form" method="post" action="ValidateLogin">
                         <div class="header header-primary text-center">
                             <div>
                                 <img src="../lib/bootstrap/assets/img/main-logo.png" alt="">
@@ -18,17 +20,18 @@
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons users_circle-08"></i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Username...">
+                                <input type="text" name="Username" placeholder="Username..." class="form-control" />
                             </div>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons text_caps-small"></i>
                                 </span>
-                                <input type="text" placeholder="Password..." class="form-control" />
+                                <input type="text" name="Password" placeholder="Password..." class="form-control"/>
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <a asp-controller="Main" asp-action="Index" class="btn btn-primary btn-round btn-lg btn-block">Log In</a>
+                            <input type="submit" value="Log In" class="btn btn-primary btn-round btn-lg btn-block"/>
+                            @*<a asp-controller="ValidateLogin" asp-action="Index" class="btn btn-primary btn-round btn-lg btn-block">Log In</a>*@
                         </div>
                         <div class="pull-left">
                             <h6>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DataDecipher.WebApp.Models;
+using QC = System.Data.SqlClient;  // System.Data.dll
 
 namespace DataDecipher.WebApp.Controllers
 {
@@ -14,16 +15,13 @@ namespace DataDecipher.WebApp.Controllers
         {
             return View();
         }
-        public IActionResult Main()
-        {
-            //TODO: Add login code here
-            return View();
-        }
+
         public IActionResult Method()
         {
             //TODO: Add login code here
             return View();
         }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
