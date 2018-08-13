@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
@@ -208,13 +205,9 @@
     <Content Remove="wwwroot\lib\bootstrap\assets\img\main-logo.png" />
     <Content Remove="Views\Home\About.cshtml" />
     <Content Remove="Views\Home\Contact.cshtml" />
-<<<<<<< HEAD
     <Content Remove="wwwroot\lib\bootstrap\assets\css\jquery.dataTables.min.css" />
     <Content Remove="wwwroot\lib\bootstrap\assets\js\jquery.dataTables.min.js" />
-=======
-    <Content Remove="Views\Home\Index.cshtml" />
-    <Content Remove="Views\ValidateLogin\Index.cshtml" />
->>>>>>> 9aa9c85... * HomeController.cs: Removed redundant method
+    <Content Remove="wwwroot\lib\bootstrap\assets\img\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />

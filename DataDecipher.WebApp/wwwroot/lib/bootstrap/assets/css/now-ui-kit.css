@@ -2690,8 +2690,19 @@ textarea.form-control:focus, textarea.form-control:active {
     color: #888;
 }
 
+.badge-default-noborder {
+    border-color: #FFFFFF;
+    color: #888;
+}
+
+
 .badge-primary {
     border-color: #f96332;
+    color: #f96332;
+}
+
+.badge-primary-noborder {
+    border-color: #FFFFFF;
     color: #f96332;
 }
 
