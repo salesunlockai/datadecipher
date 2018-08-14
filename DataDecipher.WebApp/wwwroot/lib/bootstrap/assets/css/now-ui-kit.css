@@ -2726,6 +2726,11 @@ textarea.form-control:focus, textarea.form-control:active {
     color: #FF3636;
 }
 
+.badge-danger-noborder {
+    border-color: #FFFFFF;
+    color: #FF3636;
+}
+
 .badge-neutral {
     border-color: #FFFFFF;
     color: #FFFFFF;

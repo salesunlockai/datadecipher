@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DataDecipher.WebApp.Models.MethodViewModel>
+﻿@model IEnumerable<DataDecipher.WebApp.Models.Method>
 
     @{
         ViewData["Title"] = "Method Details Page";
@@ -25,7 +25,7 @@
                                     <tr>
                                         <th></th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.Method_Name)
+                                            @Html.DisplayNameFor(model => model.Name)
                                         </th>
                                         <th>
                                             @Html.DisplayNameFor(model => model.Description)
@@ -48,7 +48,7 @@
                                     <tr>
                                         <td><input type="checkbox" name="" value=""></td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Method_Name)
+                                            @Html.DisplayFor(modelItem => item.Name)
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Description)
