@@ -6,8 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -210,6 +208,9 @@
     <Content Remove="wwwroot\lib\bootstrap\assets\css\jquery.dataTables.min.css" />
     <Content Remove="wwwroot\lib\bootstrap\assets\js\jquery.dataTables.min.js" />
     <Content Remove="wwwroot\lib\bootstrap\assets\img\.DS_Store" />
+    <Content Remove="Views\Method\RawData.cshtml" />
+    <Content Remove="Views\Main\RawData.cshtml" />
+    <Content Remove="Views\Main\_RawData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\assets\.DS_Store" />
@@ -410,9 +411,12 @@
     <Folder Include="Views\Login\" />
     <Folder Include="Views\Main\" />
     <Folder Include="Views\Method\" />
-    <Folder Include="Controllers\Extensions\" />
+    <Folder Include="TestData\" />
+    <Folder Include="Views\RawData\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Controllers\RawData.cs" />
+    <Compile Remove="Models\RawData.cs" />
   </ItemGroup>
 </Project>
