@@ -18,12 +18,13 @@ namespace DataDecipher.WebApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult DisplayRawData(string filename)
+        public ActionResult DisplayRawData(string inputSelectedFile)
         {
             var model1 = new RawDataModel
             {
-                filePath = "TestData/GC2.DAT"
-                //filePath = "TestData/" + filename
+                //filePath = "TestData/GC2.DAT"
+                fileName = inputSelectedFile,
+                filePath = "TestData/" + inputSelectedFile
             };
             model1.rawData = model1.GetRawData(model1.filePath);
 

@@ -63,12 +63,14 @@
                 <div class=col-md-4>
                     <h6>3. Set instrument configuration</h6>
                     <br />
-                    <label for="myList">Select File:</label>
-                    <select id="myList">
+                    <label for="fileList">File: </label>
+                    <select id="fileList" onChange="storeRawFileSelection(this);" >
+                        <option value="0">Select a file...</option>
                         <option value="1">GC2.DAT</option>
                         <option value="2">LL_SPOT_DATA.csv</option>
                         <option value="3">test.txt</option>
                     </select>
+                    <input type="text" id="inputSelectedFile" hidden="true" />
                     <input type="button" id="showRawData" value="Show Raw Data" class="btn btn-primary btn-round" />
                     <br />
                     <div id="divRawDataContainer">
@@ -154,21 +156,30 @@
     </div>
 </div>
 
-<script type="text/javascript">$(document).ready(function() {
+<script type="text/javascript">
 
-        $('#showRawData').click(function() {
+$(document).ready(function() {
 
-            $.ajax({
-                url: '/RawData/DisplayRawData',
-                type: 'POST',
-                data: { filename: '#myList'.value },
-                contentType: 'application/html',
-                //data: JSON.stringify(model),
-                success: function(content) {
-                    $('#divRawDataContainer').html(content);
-                },
-                error: function(e) { }
-            });
+    $('#showRawData').click(function() {
+
+        $.ajax({
+            url: '/RawData/DisplayRawData',
+            type: 'POST',
+            datatype: 'text',
+            contentType: 'application/x-www-form-urlencoded',
+            data: {inputSelectedFile: $('#inputSelectedFile').val()},
+            success: function(content) {
+                $('#divRawDataContainer').html(content);
+            },
+            error: function(e) { }
         });
-});</script>
+    });
+});
+
+function storeRawFileSelection(sel)
+    {
+         $('#inputSelectedFile').val(sel.options[sel.selectedIndex].text);
+    }
+
+</script>
 
